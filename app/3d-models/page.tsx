@@ -2,7 +2,7 @@
 
 import { getAllModels } from "@/app/lib/models";
 import type { Model } from "@/app/types";
-import { ModelCard } from "@/app/components";
+import ModelCard from "@/app/components/ModelCard";
 
 export default async function ModelsPage() {
 

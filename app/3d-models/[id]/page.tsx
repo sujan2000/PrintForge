@@ -1,4 +1,6 @@
 import type { ModelDetailPageProps } from "@/app/types"
+import { getModelById } from "@/app/lib/models"
+
 
 export default async function ModelDetailPage({ params }: ModelDetailPageProps) {
     /**
@@ -12,7 +14,9 @@ export default async function ModelDetailPage({ params }: ModelDetailPageProps) 
      * Then display the relevant information about the model,
      * using the Figma design as a guide if you'd like.
      */
-
     const { id } = await params
+
+    const model = await getModelById(id)
+
     return <h1>The id of this model is {id}</h1>
 }
