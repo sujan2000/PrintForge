@@ -1,4 +1,7 @@
 
+import Image from "next/image"
+import HeroImage from "@/public/Frame_30.png"
+
 export default function Home() {
   return (
     <main>
@@ -24,7 +27,11 @@ export default function Home() {
             </button>
           </div>
         </div>
-        <img src="/Frame 30.png" width={350} />
+        <Image
+          src={HeroImage}
+          className="w-87.5 h-auto rounded-lg"
+          alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
+        />
       </section>
     </main>
   )
