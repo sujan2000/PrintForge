@@ -11,6 +11,17 @@ export type Model = {
     dateAdded: string
 }
 
+
+
+export type Category = {
+    displayName: string
+    slug: string
+}
+
+export type CategoriesData = {
+    categories: Category[]
+}
+
 // Page Types
 export type RootLayoutProps = Readonly<{
     children: React.ReactNode;
@@ -32,3 +43,9 @@ export type PillProps = {
     className?: string
     role?: string
 }
+
+export type ModelsGridProps = {
+    title: string
+    models: Model[]
+}
+
