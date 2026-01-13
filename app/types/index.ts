@@ -57,3 +57,7 @@ export type ModelsGridProps = {
     models: Model[]
 }
 
+export type NavLinkProps = {
+    href: string
+    children: ReactNode
+}
