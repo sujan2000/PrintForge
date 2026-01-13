@@ -23,6 +23,14 @@ export type CategoriesData = {
 }
 
 // Page Types
+
+export type CategoryPageProps = {
+    params: Promise<{
+        categoryName: string
+    }>
+}
+
+
 export type RootLayoutProps = Readonly<{
     children: React.ReactNode;
 }>
