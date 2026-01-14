@@ -53,8 +53,12 @@ export type PillProps = {
 }
 
 export type ModelsGridProps = {
-    title: string
+    title?: string
     models: Model[]
+}
+
+export type GetModelsParams = {
+    category?: string
 }
 
 export type NavLinkProps = {
