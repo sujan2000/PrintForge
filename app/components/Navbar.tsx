@@ -1,5 +1,6 @@
 
 import NavLink from "./NavLink"
+import Link from "next/link"
 import PFLogoIcon from "@/public/printforge-logo-mobile.svg"
 import PFLogo from "@/public/printforge-logo-desktop.svg"
 
@@ -7,7 +8,7 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white">
       <nav className="flex justify-between px-6 py-4">
-        <NavLink href="/">
+        <Link href="/">
           <div className="relative cursor-pointer">
             {/* Desktop Logo */}
             <img
@@ -22,7 +23,7 @@ export default function Navbar() {
               className="w-[40px] h-auto block md:hidden"
             />
           </div>
-        </NavLink>
+        </Link>
         <ul className="flex items-center gap-2.5">
           <li className="text-sm uppercase cursor-pointer">
             <NavLink href="/3d-models">3D Models</NavLink>
