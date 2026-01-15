@@ -2,6 +2,7 @@ import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
 import type { RootLayoutProps } from "./types";
 import Navbar from "@/app/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const albertSans = Albert_Sans({
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${albertSans.className} ${montserratAlternates.variable}`}>
         <Navbar />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
