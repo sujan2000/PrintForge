@@ -31,6 +31,12 @@ export type CategoryPageProps = {
 }
 
 
+export type ModelsPageProps = {
+    searchParams: Promise<{
+        query?: string | undefined
+    }>
+}
+
 export type RootLayoutProps = Readonly<{
     children: React.ReactNode;
 }>
